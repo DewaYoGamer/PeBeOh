@@ -222,7 +222,21 @@ public class login extends javax.swing.JFrame {
 
             if (rs.next()) {
                 // Credentials match
-                JOptionPane.showMessageDialog(null, "Login Berhasil!");
+                String tipe = rs.getString("tipe_user");
+                if (tipe.equals("user")){
+                    this.dispose();
+                    landingPage landingPageFrame = new landingPage(username);
+                    landingPageFrame.setVisible(true);
+                    landingPageFrame.pack();
+                    landingPageFrame.setLocationRelativeTo(null);
+                }
+                else if (tipe.equals("perusahaan")){
+                    this.dispose();
+                    HomePagePerusahaan homePerusahaanFrame = new HomePagePerusahaan();
+                    homePerusahaanFrame.setVisible(true);
+                    homePerusahaanFrame.pack();
+                    homePerusahaanFrame.setLocationRelativeTo(null);
+                }
             } else {
                 // Credentials do not match
                 JOptionPane.showMessageDialog(null, "Identitas yang Anda masukkan tidak valid, silahkan masuk kembali atau daftar baru.");

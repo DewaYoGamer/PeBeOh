@@ -38,6 +38,7 @@ public class register extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -120,6 +121,13 @@ public class register extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setText("Daftar Sebagai Perusahaan");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -141,7 +149,10 @@ public class register extends javax.swing.JFrame {
                         .addGap(131, 131, 131)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE))))
+                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(106, 106, 106)
+                        .addComponent(jLabel5)))
                 .addContainerGap(313, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -165,7 +176,9 @@ public class register extends javax.swing.JFrame {
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17)
                 .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(134, 134, 134))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel5)
+                .addGap(106, 106, 106))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -219,7 +232,7 @@ public class register extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Nama Pengguna sudah ada, silahkan gunakan nama pengguna lain.");
             }
             else{
-                String insertSql = "INSERT INTO tb_users (username, password) VALUES (?, ?)";
+                String insertSql = "INSERT INTO tb_users (username, password, tipe_user) VALUES (?, ?, 'user')";
                 PreparedStatement pstmtInsert = conn.prepareStatement(insertSql);
                 pstmtInsert.setString(1, username);
                 pstmtInsert.setString(2, password);
@@ -264,6 +277,15 @@ public class register extends javax.swing.JFrame {
         loginFrame.pack();
         loginFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        // Redirect to company register page
+        this.dispose();
+        registerPerusahaan registerPerusahaanFrame = new registerPerusahaan();
+        registerPerusahaanFrame.setVisible(true);
+        registerPerusahaanFrame.pack();
+        registerPerusahaanFrame.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jLabel5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -310,6 +332,7 @@ public class register extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
