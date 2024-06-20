@@ -7,12 +7,16 @@ package aplikasilowongankerja;
 import javax.swing.*;
 import java.sql.*;
 
-public class register extends javax.swing.JFrame {
+public class register2 extends javax.swing.JFrame {
+    String username;
+    String password;
 
     /**
      * Creates new form login
      */
-    public register() {
+    public register2(String usernameParam, String passwordParam) {
+        username = usernameParam;
+        password = passwordParam;
         initComponents();
     }
 
@@ -33,12 +37,17 @@ public class register extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jSeparator4 = new javax.swing.JSeparator();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jSeparator5 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,9 +82,9 @@ public class register extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel1.setText("DAFTAR");
 
-        jLabel3.setText("Masukkan Nama Pengguna Baru :");
+        jLabel3.setText("Masukkan Nama Lengkap :");
 
-        jLabel4.setText("Masukkan Kata Sandi Baru :");
+        jLabel4.setText("Masukkan Email :");
 
         jTextField1.setBackground(new java.awt.Color(0, 204, 204));
         jTextField1.setToolTipText("");
@@ -84,16 +93,6 @@ public class register extends javax.swing.JFrame {
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jPasswordField1.setBackground(new java.awt.Color(0, 204, 204));
-        jPasswordField1.setToolTipText("");
-        jPasswordField1.setBorder(null);
-        jPasswordField1.setPreferredSize(new java.awt.Dimension(70, 30));
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
             }
         });
 
@@ -121,12 +120,45 @@ public class register extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Daftar Sebagai Perusahaan");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
+        jTextField2.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField2.setToolTipText("");
+        jTextField2.setBorder(null);
+        jTextField2.setMinimumSize(new java.awt.Dimension(70, 30));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
             }
         });
+
+        jLabel6.setText("Masukkan Alamat :");
+
+        jTextField3.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField3.setToolTipText("");
+        jTextField3.setBorder(null);
+        jTextField3.setMinimumSize(new java.awt.Dimension(70, 30));
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
+        jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
+
+        jTextField4.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField4.setToolTipText("");
+        jTextField4.setBorder(null);
+        jTextField4.setMinimumSize(new java.awt.Dimension(70, 30));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setText("Masukkan No. Telepon :");
+
+        jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -142,18 +174,24 @@ public class register extends javax.swing.JFrame {
                                 .addComponent(jLabel3)
                                 .addComponent(jLabel4)
                                 .addComponent(jSeparator1)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                                .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING))))
+                                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                                .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE))
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jSeparator4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
+                        .addGap(129, 129, 129)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(106, 106, 106)
-                        .addComponent(jLabel5)))
-                .addContainerGap(313, Short.MAX_VALUE))
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(307, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,22 +201,32 @@ public class register extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
-                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel5)
-                .addGap(106, 106, 106))
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -204,7 +252,7 @@ public class register extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 535, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 561, Short.MAX_VALUE)
         );
 
         pack();
@@ -217,30 +265,28 @@ public class register extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // Button to register
-        String username = jTextField1.getText();
-        String password = new String(jPasswordField1.getPassword());
+        String nama = jTextField2.getText();
+        String email = jTextField1.getText();
+        String alamat = jTextField3.getText();
+        String noTelp = jTextField4.getText();
         handleMySQL dbHandler = new handleMySQL();
         Connection conn = dbHandler.connect();
-        String checkSql = "SELECT * FROM tb_users WHERE username = ?";
         try {
-            // Prepare the statement
-            PreparedStatement pstmtCheck = conn.prepareStatement(checkSql);
-            pstmtCheck.setString(1, username);
-            ResultSet rs = pstmtCheck.executeQuery();
-            if (rs.next()) {
-                // Username already exists
-                JOptionPane.showMessageDialog(null, "Nama Pengguna sudah ada, silahkan gunakan nama pengguna lain.");
-            }
-            else{
-                this.dispose();
-                register2 register2Frame = new register2(username, password);
-                register2Frame.setVisible(true);
-                register2Frame.pack();
-                register2Frame.setLocationRelativeTo(null);
-            }
-            rs.close();
-            pstmtCheck.close();
-            conn.close();
+            Statement stmt = conn.createStatement();
+            String query = "INSERT INTO tb_users (username, password, tipe_user) VALUES ('" + username + "', '" + password + "', 'user')";
+            stmt.executeUpdate(query);
+            query = "SELECT id_user FROM tb_users WHERE username = '" + username + "'";
+            ResultSet rs = stmt.executeQuery(query);
+            rs.next();
+            int idUser = rs.getInt("id_user");
+            query = "INSERT INTO tb_pengguna (id_user, nama_pengguna, alamat, no_telp) VALUES (" + idUser + ", '" + nama + "', '" + alamat + "', '" + noTelp + "')";
+            stmt.executeUpdate(query);
+            JOptionPane.showMessageDialog(null, "Registrasi berhasil! Silahkan login.");
+            this.dispose();
+            login loginFrame = new login();
+            loginFrame.setVisible(true);
+            loginFrame.pack();
+            loginFrame.setLocationRelativeTo(null);
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "An error occurred. Please try again.");
             e.printStackTrace();
@@ -248,27 +294,26 @@ public class register extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        login loginFrame = new login();
-        loginFrame.setVisible(true);
-        loginFrame.pack();
-        loginFrame.setLocationRelativeTo(null);
+        register registerFrame = new register();
+        registerFrame.setVisible(true);
+        registerFrame.pack();
+        registerFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        // Redirect to company register page
-        this.dispose();
-        registerPerusahaan registerPerusahaanFrame = new registerPerusahaan();
-        registerPerusahaanFrame.setVisible(true);
-        registerPerusahaanFrame.pack();
-        registerPerusahaanFrame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_jLabel5MouseClicked
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -287,14 +332,18 @@ public class register extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(register2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(register2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(register2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(register2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -303,7 +352,7 @@ public class register extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new register().setVisible(true);
+                new register2("", "").setVisible(true);
             }
         });
     }
@@ -315,13 +364,18 @@ public class register extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }

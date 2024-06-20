@@ -8,12 +8,16 @@ import javax.swing.*;
 import java.sql.*;
 
 public class registerPerusahaan2 extends javax.swing.JFrame {
+    String username;
+    String password;
 
     /**
      * Creates new form login
      */
-    public registerPerusahaan2(String username, String password) {
-        initComponents(username, password);
+    public registerPerusahaan2(String usernameParam, String passwordParam) {
+        username = usernameParam;
+        password = passwordParam;
+        initComponents();
     }
 
     /**
@@ -23,7 +27,7 @@ public class registerPerusahaan2 extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents(String username, String password){
+    private void initComponents(){
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -244,10 +248,10 @@ public class registerPerusahaan2 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        register registerFrame = new register();
-        registerFrame.setVisible(true);
-        registerFrame.pack();
-        registerFrame.setLocationRelativeTo(null);
+        registerPerusahaan registerPerusahaanFrame = new registerPerusahaan();
+        registerPerusahaanFrame.setVisible(true);
+        registerPerusahaanFrame.pack();
+        registerPerusahaanFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -315,9 +319,7 @@ public class registerPerusahaan2 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                String username = "";
-                String password = "";
-                new registerPerusahaan2(username, password).setVisible(true);
+                new registerPerusahaan2("", "").setVisible(true);
             }
         });
     }

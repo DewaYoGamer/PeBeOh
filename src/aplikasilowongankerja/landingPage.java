@@ -3,18 +3,35 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package aplikasilowongankerja;
-
+import java.sql.*;
 /**
  *
  * @author Dektu
  */
 public class landingPage extends javax.swing.JFrame {
+    String username;
+    String nama;
 
     /**
      * Creates new form landingPage
      */
-    public landingPage(String username) {
-        initComponents(username);
+    public landingPage(String usernameParam) {
+        handleMySQL obj = new handleMySQL();
+        Connection conn = obj.connect();
+        String query = "SELECT nama_pengguna FROM tb_pengguna JOIN tb_users ON tb_pengguna.id_user = tb_users.id_user WHERE username = ?";
+        try {
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            preparedStmt.setString(1, usernameParam);
+            ResultSet rs = preparedStmt.executeQuery();
+            while (rs.next()) {
+                nama = rs.getString("nama_pengguna");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        username = usernameParam;
+        initComponents();
+        Greeting_Label.setText("Selamat datang, " + nama + "!");
     }
 
     /**
@@ -24,7 +41,7 @@ public class landingPage extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents(String username) {
+    private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -51,7 +68,7 @@ public class landingPage extends javax.swing.JFrame {
         jTextArea8 = new javax.swing.JTextArea();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        Greeting_Label = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,7 +81,7 @@ public class landingPage extends javax.swing.JFrame {
         jLabel1.setText("Daftar Lowongan");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt, username);
+                jLabel1MouseClicked(evt);
             }
         });
 
@@ -244,8 +261,8 @@ public class landingPage extends javax.swing.JFrame {
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
-        jLabel14.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        jLabel14.setText("Selamat datang, " + username + "!");
+        Greeting_Label.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
+        Greeting_Label.setText("Selamat datang, xxx!");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("KELUAR");
@@ -270,7 +287,7 @@ public class landingPage extends javax.swing.JFrame {
                             .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
+                        .addComponent(Greeting_Label)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)
                         .addGap(24, 24, 24))))
@@ -281,7 +298,7 @@ public class landingPage extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
+                    .addComponent(Greeting_Label)
                     .addComponent(jButton1))
                 .addGap(26, 26, 26)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -311,7 +328,7 @@ public class landingPage extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt, String username) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         daftarLowongan window = new daftarLowongan(username);
         window.setVisible(true);
         window.setLocationRelativeTo(null);
@@ -354,12 +371,12 @@ public class landingPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Greeting_Label;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel31;

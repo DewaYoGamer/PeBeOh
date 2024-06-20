@@ -9,12 +9,13 @@ package aplikasilowongankerja;
  * @author Dektu
  */
 public class daftarLowongan extends javax.swing.JFrame {
-
+    String username;
     /**
      * Creates new form Lamar
      */
-    public daftarLowongan(String username) {
-        initComponents(username);
+    public daftarLowongan(String usernameParam) {
+        username = usernameParam;
+        initComponents();
     }
 
     /**
@@ -24,7 +25,7 @@ public class daftarLowongan extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents(String username) {
+    private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -131,7 +132,7 @@ public class daftarLowongan extends javax.swing.JFrame {
         jButton1.setText("KEMBALI");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt, username);
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -427,7 +428,7 @@ public class daftarLowongan extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt, String username) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.dispose();
         landingPage landing = new landingPage(username);
         landing.setVisible(true);
