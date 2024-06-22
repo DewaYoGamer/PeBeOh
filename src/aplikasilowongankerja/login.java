@@ -72,9 +72,9 @@ public class login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel1.setText("MASUK");
 
-        jLabel3.setText("Masukkan Nama Pengguna :");
+        jLabel3.setText("Nama Pengguna :");
 
-        jLabel4.setText("Masukkan Kata Sandi :");
+        jLabel4.setText("Kata Sandi :");
 
         jTextField1.setBackground(new java.awt.Color(0, 204, 204));
         jTextField1.setToolTipText("");
@@ -232,7 +232,7 @@ public class login extends javax.swing.JFrame {
                 }
                 else if (tipe.equals("perusahaan")){
                     this.dispose();
-                    HomePagePerusahaan homePerusahaanFrame = new HomePagePerusahaan(username);
+                    HomePagePerusahaan homePerusahaanFrame = new HomePagePerusahaan(username, 1);
                     homePerusahaanFrame.setVisible(true);
                     homePerusahaanFrame.pack();
                     homePerusahaanFrame.setLocationRelativeTo(null);

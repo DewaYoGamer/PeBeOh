@@ -85,9 +85,9 @@ public class register2 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel1.setText("DAFTAR");
 
-        jLabel3.setText("Masukkan Nama Lengkap :");
+        jLabel3.setText("Nama Lengkap :");
 
-        jLabel4.setText("Masukkan Email :");
+        jLabel4.setText("Email :");
 
         jTextField1.setBackground(new java.awt.Color(0, 204, 204));
         jTextField1.setToolTipText("");
@@ -133,7 +133,7 @@ public class register2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setText("Masukkan Alamat :");
+        jLabel6.setText("Alamat :");
 
         jTextField3.setBackground(new java.awt.Color(0, 204, 204));
         jTextField3.setToolTipText("");
@@ -158,7 +158,7 @@ public class register2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setText("Masukkan No. Telepon :");
+        jLabel7.setText("No. Telepon :");
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
@@ -173,7 +173,7 @@ public class register2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setText("Masukkan Usia :");
+        jLabel8.setText("Usia :");
 
         jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));

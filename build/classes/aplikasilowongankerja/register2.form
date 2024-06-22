@@ -217,12 +217,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Masukkan Nama Lengkap :"/>
+                <Property name="text" type="java.lang.String" value="Nama Lengkap :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Masukkan Email :"/>
+                <Property name="text" type="java.lang.String" value="Email :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField1">
@@ -309,7 +309,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Masukkan Alamat :"/>
+                <Property name="text" type="java.lang.String" value="Alamat :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField3">
@@ -358,7 +358,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Masukkan No. Telepon :"/>
+                <Property name="text" type="java.lang.String" value="No. Telepon :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator5">
@@ -390,7 +390,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Masukkan Usia :"/>
+                <Property name="text" type="java.lang.String" value="Usia :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator6">

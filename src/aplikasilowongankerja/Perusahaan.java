@@ -74,10 +74,7 @@ public class Perusahaan extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(381, 381, 381)
-                .addComponent(namaperu)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(namaperu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,6 +91,8 @@ public class Perusahaan extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jTextArea1.setText("Indofood adalah salah satu perusahaan \nterbesar di Indonesia yang bergerak di bidang produksi makanan dan \nminuman. Didirikan pada tahun 1990 oleh Sudono Salim, perusahaan ini \ntelah berkembang menjadi salah satu pemain utama dalam industri makanan \ndi Indonesia dan juga di pasar internasional.");
         jTextArea1.setBorder(null);
+        jTextArea1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        jTextArea1.setEnabled(false);
         jScrollPane1.setViewportView(jTextArea1);
 
         jButton1.setText("Kembali");
@@ -119,17 +118,15 @@ public class Perusahaan extends javax.swing.JFrame {
                 .addGap(0, 197, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(169, 169, 169))
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jButton1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(395, 395, 395)
-                        .addComponent(jButton2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(394, 394, 394)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(397, 397, 397)
+                        .addComponent(jButton2)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -142,9 +139,9 @@ public class Perusahaan extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(32, 32, 32)
                 .addComponent(jButton2)
-                .addContainerGap(327, Short.MAX_VALUE))
+                .addContainerGap(333, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -163,7 +160,7 @@ public class Perusahaan extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        HomePagePerusahaan home = new HomePagePerusahaan(username);
+        HomePagePerusahaan home = new HomePagePerusahaan(username, 1);
         home.setVisible(true);
         home.pack();
         home.setLocationRelativeTo(null);
