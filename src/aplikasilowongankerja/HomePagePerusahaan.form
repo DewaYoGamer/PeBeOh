@@ -60,11 +60,11 @@
                                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lowongan3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lowongan1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="lowongan1" max="32767" attributes="0"/>
+                                      <Component id="lowongan3" max="32767" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="lowongan4" max="32767" attributes="0"/>
                                       <Component id="lowongan2" min="-2" max="-2" attributes="0"/>
@@ -78,7 +78,7 @@
                                   <Component id="BerikutnyaButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="55" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="34" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -174,12 +174,12 @@
                               <Component id="lowongan4date" min="-2" pref="142" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lowongan4pane" min="-2" pref="246" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lowongan4edit" min="-2" pref="61" max="-2" attributes="0"/>
-                                  <Component id="lowongan4status" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <Component id="lowongan1edit2" alignment="1" pref="0" max="32767" attributes="0"/>
+                                  <Component id="lowongan4edit" pref="0" max="32767" attributes="0"/>
+                                  <Component id="lowongan4status" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -197,13 +197,15 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lowongan4pane" alignment="1" min="-2" pref="92" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
+                          <Group type="102" attributes="0">
                               <Component id="lowongan4status" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="63" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="lowongan1edit2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan4edit" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
+                          <Component id="lowongan4pane" pref="104" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -269,6 +271,17 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan4editActionPerformed"/>
               </Events>
             </Component>
+            <Component class="javax.swing.JButton" name="lowongan1edit2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="8" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="LAMARAN"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan1edit2ActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="lowongan3">
@@ -287,7 +300,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lowongan3title" pref="147" max="32767" attributes="0"/>
+                              <Component id="lowongan3title" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan3date" min="-2" pref="142" max="-2" attributes="0"/>
                           </Group>
@@ -296,7 +309,13 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="lowongan3status" max="32767" attributes="0"/>
-                                  <Component id="lowongan3edit" pref="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="lowongan3edit" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="lowongan1edit3" alignment="1" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -307,7 +326,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lowongan3title" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lowongan3date" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -318,6 +337,8 @@
                           <Group type="102" attributes="0">
                               <Component id="lowongan3status" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="lowongan1edit3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan3edit" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -389,6 +410,17 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan3editActionPerformed"/>
               </Events>
             </Component>
+            <Component class="javax.swing.JButton" name="lowongan1edit3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="8" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="LAMARAN"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan1edit3ActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="lowongan2">
@@ -405,7 +437,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan2title" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -413,15 +445,11 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="lowongan2pane" min="-2" pref="246" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                      <Component id="lowongan2status" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="lowongan2edit" min="-2" pref="61" max="-2" attributes="0"/>
-                                  </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lowongan2edit" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="lowongan1edit4" alignment="1" pref="0" max="32767" attributes="0"/>
+                                  <Component id="lowongan2status" alignment="1" pref="67" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -437,12 +465,14 @@
                           <Component id="lowongan2title" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lowongan2date" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lowongan2pane" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lowongan2status" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="lowongan1edit4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan2edit" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -511,6 +541,17 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan2editActionPerformed"/>
               </Events>
             </Component>
+            <Component class="javax.swing.JButton" name="lowongan1edit4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="8" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="LAMARAN"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan1edit4ActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="lowongan1">
@@ -529,7 +570,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lowongan1title" pref="147" max="32767" attributes="0"/>
+                              <Component id="lowongan1title" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan1date" min="-2" pref="142" max="-2" attributes="0"/>
                           </Group>
@@ -538,7 +579,11 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="lowongan1status" max="32767" attributes="0"/>
-                                  <Component id="lowongan1edit" pref="0" max="32767" attributes="0"/>
+                                  <Component id="lowongan1edit" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="lowongan1edit1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -549,7 +594,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lowongan1title" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lowongan1date" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -560,6 +605,8 @@
                           <Group type="102" attributes="0">
                               <Component id="lowongan1status" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="lowongan1edit1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan1edit" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -627,6 +674,17 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan1editActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="lowongan1edit1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="8" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="LAMARAN"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lowongan1edit1ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

@@ -230,6 +230,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan4date = new javax.swing.JLabel();
         lowongan4status = new javax.swing.JLabel();
         lowongan4edit = new javax.swing.JButton();
+        lowongan1edit2 = new javax.swing.JButton();
         lowongan3 = new javax.swing.JPanel();
         lowongan3title = new javax.swing.JLabel();
         lowongan3pane = new javax.swing.JScrollPane();
@@ -237,6 +238,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan3date = new javax.swing.JLabel();
         lowongan3status = new javax.swing.JLabel();
         lowongan3edit = new javax.swing.JButton();
+        lowongan1edit3 = new javax.swing.JButton();
         lowongan2 = new javax.swing.JPanel();
         lowongan2title = new javax.swing.JLabel();
         lowongan2pane = new javax.swing.JScrollPane();
@@ -244,6 +246,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan2date = new javax.swing.JLabel();
         lowongan2status = new javax.swing.JLabel();
         lowongan2edit = new javax.swing.JButton();
+        lowongan1edit4 = new javax.swing.JButton();
         lowongan1 = new javax.swing.JPanel();
         lowongan1title = new javax.swing.JLabel();
         lowongan1pane = new javax.swing.JScrollPane();
@@ -251,6 +254,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan1date = new javax.swing.JLabel();
         lowongan1status = new javax.swing.JLabel();
         lowongan1edit = new javax.swing.JButton();
+        lowongan1edit1 = new javax.swing.JButton();
         BerikutnyaButton = new javax.swing.JToggleButton();
         SebelumnyaButton = new javax.swing.JToggleButton();
         jLabel3 = new javax.swing.JLabel();
@@ -327,6 +331,14 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
+        lowongan1edit2.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit2.setText("LAMARAN");
+        lowongan1edit2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1edit2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout lowongan4Layout = new javax.swing.GroupLayout(lowongan4);
         lowongan4.setLayout(lowongan4Layout);
         lowongan4Layout.setHorizontalGroup(
@@ -339,12 +351,12 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan4date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(lowongan4Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lowongan4pane, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lowongan4edit, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lowongan4status, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(lowongan1edit2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(lowongan4edit, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(lowongan4status, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         lowongan4Layout.setVerticalGroup(
@@ -356,12 +368,14 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                     .addComponent(lowongan4date))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lowongan4pane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan4Layout.createSequentialGroup()
+                    .addGroup(lowongan4Layout.createSequentialGroup()
                         .addComponent(lowongan4status)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan4edit)
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addComponent(lowongan4pane, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)))
         );
 
         lowongan3.setBackground(new java.awt.Color(255, 255, 255));
@@ -397,6 +411,14 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
+        lowongan1edit3.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit3.setText("LAMARAN");
+        lowongan1edit3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1edit3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout lowongan3Layout = new javax.swing.GroupLayout(lowongan3);
         lowongan3.setLayout(lowongan3Layout);
         lowongan3Layout.setHorizontalGroup(
@@ -405,7 +427,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(lowongan3Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lowongan3title, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                        .addComponent(lowongan3title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan3date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(lowongan3Layout.createSequentialGroup()
@@ -413,13 +435,17 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lowongan3status, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lowongan3edit, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan3Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lowongan3edit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lowongan1edit3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                 .addContainerGap())
         );
         lowongan3Layout.setVerticalGroup(
             lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lowongan3Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
+                .addContainerGap()
                 .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lowongan3title)
                     .addComponent(lowongan3date))
@@ -429,6 +455,8 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                     .addGroup(lowongan3Layout.createSequentialGroup()
                         .addComponent(lowongan3status)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan3edit)
                         .addContainerGap())))
         );
@@ -465,26 +493,32 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
+        lowongan1edit4.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit4.setText("LAMARAN");
+        lowongan1edit4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1edit4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout lowongan2Layout = new javax.swing.GroupLayout(lowongan2);
         lowongan2.setLayout(lowongan2Layout);
         lowongan2Layout.setHorizontalGroup(
             lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lowongan2Layout.createSequentialGroup()
                 .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan2Layout.createSequentialGroup()
+                    .addGroup(lowongan2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(lowongan2title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan2date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(lowongan2Layout.createSequentialGroup()
                         .addComponent(lowongan2pane, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(lowongan2Layout.createSequentialGroup()
-                                .addGap(24, 24, 24)
-                                .addComponent(lowongan2status, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(lowongan2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lowongan2edit, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lowongan2edit, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(lowongan1edit4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(lowongan2status, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         lowongan2Layout.setVerticalGroup(
@@ -494,12 +528,14 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lowongan2title)
                     .addComponent(lowongan2date))
-                .addGap(10, 10, 10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lowongan2pane)
                     .addGroup(lowongan2Layout.createSequentialGroup()
                         .addComponent(lowongan2status)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan2edit)
                         .addContainerGap())))
         );
@@ -537,6 +573,14 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
+        lowongan1edit1.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit1.setText("LAMARAN");
+        lowongan1edit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1edit1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout lowongan1Layout = new javax.swing.GroupLayout(lowongan1);
         lowongan1.setLayout(lowongan1Layout);
         lowongan1Layout.setHorizontalGroup(
@@ -545,7 +589,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addGroup(lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(lowongan1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lowongan1title, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                        .addComponent(lowongan1title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan1date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(lowongan1Layout.createSequentialGroup()
@@ -553,13 +597,16 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lowongan1status, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lowongan1edit, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
+                            .addComponent(lowongan1edit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(lowongan1edit1)))))
                 .addContainerGap())
         );
         lowongan1Layout.setVerticalGroup(
             lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lowongan1Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
+                .addContainerGap()
                 .addGroup(lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lowongan1title)
                     .addComponent(lowongan1date))
@@ -569,6 +616,8 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                     .addGroup(lowongan1Layout.createSequentialGroup()
                         .addComponent(lowongan1status)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan1edit)
                         .addContainerGap())))
         );
@@ -624,10 +673,10 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton1))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lowongan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lowongan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(68, 68, 68)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(lowongan1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lowongan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(72, 72, 72)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(lowongan4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(lowongan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -637,7 +686,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                                 .addComponent(SebelumnyaButton)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BerikutnyaButton)))
-                        .addGap(0, 55, Short.MAX_VALUE))))
+                        .addGap(0, 34, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -776,6 +825,22 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         perusahaanFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jLabel3MouseClicked
 
+    private void lowongan1edit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lowongan1edit1ActionPerformed
+
+    private void lowongan1edit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lowongan1edit2ActionPerformed
+
+    private void lowongan1edit3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lowongan1edit3ActionPerformed
+
+    private void lowongan1edit4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lowongan1edit4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -825,6 +890,10 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
     private javax.swing.JTextArea lowongan1area;
     private javax.swing.JLabel lowongan1date;
     private javax.swing.JButton lowongan1edit;
+    private javax.swing.JButton lowongan1edit1;
+    private javax.swing.JButton lowongan1edit2;
+    private javax.swing.JButton lowongan1edit3;
+    private javax.swing.JButton lowongan1edit4;
     private javax.swing.JScrollPane lowongan1pane;
     private javax.swing.JLabel lowongan1status;
     private javax.swing.JLabel lowongan1title;
