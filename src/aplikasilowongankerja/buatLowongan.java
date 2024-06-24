@@ -102,7 +102,6 @@ public class buatlowongan extends javax.swing.JFrame {
 
         jLabel7.setText("Minimal Gaji :");
 
-        jTextArea1.setBackground(new java.awt.Color(0, 204, 204));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
@@ -243,6 +242,10 @@ public class buatlowongan extends javax.swing.JFrame {
         // TODO add your handling code here:
         handleMySQL db = new handleMySQL();
         Connection conn = db.connect();
+        if (jTextField2.getText().equals("") || jTextArea1.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Nama lowongan dan deskripsi tidak boleh kosong!");
+            return;
+        }
         try {
             String query = "INSERT INTO tb_lowongan (id_perusahaan, nama_lowongan, deskripsi, gaji, enabled, kategori, date_posted) VALUES (?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(query);

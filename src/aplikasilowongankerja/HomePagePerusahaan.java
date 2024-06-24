@@ -5,6 +5,7 @@
 package aplikasilowongankerja;
 
 import javax.swing.*;
+import java.awt.*;
 import java.sql.*;
 import java.util.Objects;
 
@@ -143,6 +144,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             e.printStackTrace();
         }
         initComponents();
+        this.setMinimumSize(new Dimension(850, 550));
         Greeting_Label.setText("Selamat datang, " + nama + "!");
         if(jumlahLowongan == 0) {
             jLabel6.setText("Anda belum membuat lowongan kerja, silahkan membuat lowongan kerja terlebih dahulu");
@@ -332,7 +334,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         });
 
         lowongan1edit2.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        lowongan1edit2.setText("LAMARAN");
+        lowongan1edit2.setText("PELAMAR");
         lowongan1edit2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lowongan1edit2ActionPerformed(evt);
@@ -356,7 +358,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                         .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lowongan1edit2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(lowongan4edit, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(lowongan4status, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(lowongan4status, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         lowongan4Layout.setVerticalGroup(
@@ -412,7 +414,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         });
 
         lowongan1edit3.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        lowongan1edit3.setText("LAMARAN");
+        lowongan1edit3.setText("PELAMAR");
         lowongan1edit3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lowongan1edit3ActionPerformed(evt);
@@ -451,7 +453,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                     .addComponent(lowongan3date))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lowongan3pane)
+                    .addComponent(lowongan3pane, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
                     .addGroup(lowongan3Layout.createSequentialGroup()
                         .addComponent(lowongan3status)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -494,7 +496,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         });
 
         lowongan1edit4.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        lowongan1edit4.setText("LAMARAN");
+        lowongan1edit4.setText("PELAMAR");
         lowongan1edit4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lowongan1edit4ActionPerformed(evt);
@@ -530,7 +532,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                     .addComponent(lowongan2date))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lowongan2pane)
+                    .addComponent(lowongan2pane, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
                     .addGroup(lowongan2Layout.createSequentialGroup()
                         .addComponent(lowongan2status)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -574,7 +576,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         });
 
         lowongan1edit1.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        lowongan1edit1.setText("LAMARAN");
+        lowongan1edit1.setText("PELAMAR");
         lowongan1edit1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lowongan1edit1ActionPerformed(evt);
@@ -662,56 +664,53 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addGap(54, 54, 54)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Greeting_Label)
+                        .addGap(315, 315, 315)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1))
+                    .addComponent(jLabel6)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Greeting_Label)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel3)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton1))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(lowongan1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lowongan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(72, 72, 72)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lowongan4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lowongan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(SebelumnyaButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BerikutnyaButton)))
-                        .addGap(0, 34, Short.MAX_VALUE))))
+                        .addComponent(lowongan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(72, 72, 72)
+                        .addComponent(lowongan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lowongan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(72, 72, 72)
+                        .addComponent(lowongan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addGap(475, 475, 475)
+                        .addComponent(SebelumnyaButton)
+                        .addGap(6, 6, 6)
+                        .addComponent(BerikutnyaButton))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Greeting_Label)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jButton1))))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lowongan2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lowongan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lowongan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lowongan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lowongan4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lowongan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lowongan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lowongan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
-                    .addComponent(BerikutnyaButton)
-                    .addComponent(SebelumnyaButton))
-                .addGap(51, 51, 51))
+                    .addComponent(SebelumnyaButton)
+                    .addComponent(BerikutnyaButton)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -730,6 +729,11 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
 
     private void lowongan3editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan3editActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[2]);
+        editlowonganFrame.setVisible(true);
+        editlowonganFrame.pack();
+        editlowonganFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan3editActionPerformed
 
     private void lowongan1editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1editActionPerformed
@@ -743,10 +747,20 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
 
     private void lowongan2editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan2editActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[1]);
+        editlowonganFrame.setVisible(true);
+        editlowonganFrame.pack();
+        editlowonganFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan2editActionPerformed
 
     private void lowongan4editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan4editActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[3]);
+        editlowonganFrame.setVisible(true);
+        editlowonganFrame.pack();
+        editlowonganFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan4editActionPerformed
 
     private void SebelumnyaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SebelumnyaButtonActionPerformed
