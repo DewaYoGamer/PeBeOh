@@ -662,7 +662,7 @@ public class landingPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-        daftarLowongan window = new daftarLowongan(username, 1);
+        daftarLowongan window = new daftarLowongan(username, 1, "SEMUA");
         window.setVisible(true);
         window.setLocationRelativeTo(null);
         this.dispose();

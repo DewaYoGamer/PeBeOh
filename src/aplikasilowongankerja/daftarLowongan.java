@@ -12,7 +12,7 @@ import java.util.Locale;
  * @author Dektu
  */
 public class daftarLowongan extends javax.swing.JFrame {
-    String username;
+    String username, kategori;
     int jumlahLowongan, nextjumlahLowongan, reallyMaxJumlahLowongan;
     int page;
     int row, nextrow;
@@ -28,7 +28,8 @@ public class daftarLowongan extends javax.swing.JFrame {
     /**
      * Creates new form Lamar
      */
-    public daftarLowongan(String usernameParam, int pageParam) {
+    public daftarLowongan(String usernameParam, int pageParam, String kategoriParam) {
+        kategori = kategoriParam;
         username = usernameParam;
         page = pageParam;
         row = (page - 1) * 6;
@@ -36,30 +37,65 @@ public class daftarLowongan extends javax.swing.JFrame {
         handleMySQL obj = new handleMySQL();
         Connection con = obj.connect();
         try {
-            String query = "SELECT COUNT(*) AS jumlah FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE ORDER BY date_posted DESC) AS tb_lowongan LIMIT 6 OFFSET ?) AS tb_lowongan";
+            String query;
+            if (kategori.equals("SEMUA")) {
+                query = "SELECT COUNT(*) AS jumlah FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE ORDER BY date_posted DESC) AS tb_lowongan LIMIT 6 OFFSET ?) AS tb_lowongan";
+            } else {
+                query = "SELECT COUNT(*) AS jumlah FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE AND kategori = ? ORDER BY date_posted DESC) AS tb_lowongan LIMIT 6 OFFSET ?) AS tb_lowongan";
+            }
             PreparedStatement preparedStmt = con.prepareStatement(query);
-            preparedStmt.setInt(1, row);
+            if(!kategori.equals("SEMUA")){
+                preparedStmt.setString(1, kategori);
+                preparedStmt.setInt(2, row);
+            } else {
+                preparedStmt.setInt(1, row);
+            }
             ResultSet rs = preparedStmt.executeQuery();
             while (rs.next()) {
                 jumlahLowongan = rs.getInt("jumlah");
             }
-            query = "SELECT COUNT(*) AS total FROM tb_lowongan";
+            if (kategori.equals("SEMUA")) {
+                query = "SELECT COUNT(*) AS total FROM tb_lowongan WHERE enabled = TRUE";
+            } else {
+                query = "SELECT COUNT(*) AS total FROM tb_lowongan WHERE enabled = TRUE AND kategori = ?";
+            }
             preparedStmt = con.prepareStatement(query);
+            if(!kategori.equals("SEMUA")){
+                preparedStmt.setString(1, kategori);
+            }
             rs = preparedStmt.executeQuery();
             while (rs.next()) {
                 reallyMaxJumlahLowongan = rs.getInt("total");
             }
             maxPage = (int) Math.ceil((double) reallyMaxJumlahLowongan / 6);
-            query = "SELECT COUNT(*) AS jumlah FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE ORDER BY date_posted DESC) AS tb_lowongan LIMIT 6 OFFSET ?) AS tb_lowongan";
+            if (kategori.equals("SEMUA")) {
+                query = "SELECT COUNT(*) AS jumlah FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE ORDER BY date_posted DESC) AS tb_lowongan LIMIT 6 OFFSET ?) AS tb_lowongan";
+            } else {
+                query = "SELECT COUNT(*) AS jumlah FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE AND kategori = ? ORDER BY date_posted DESC) AS tb_lowongan LIMIT 6 OFFSET ?) AS tb_lowongan";
+            }
             preparedStmt = con.prepareStatement(query);
-            preparedStmt.setInt(1, nextrow);
+            if(!kategori.equals("SEMUA")){
+                preparedStmt.setString(1, kategori);
+                preparedStmt.setInt(2, nextrow);
+            } else {
+                preparedStmt.setInt(1, nextrow);
+            }
             rs = preparedStmt.executeQuery();
             while (rs.next()) {
                 nextjumlahLowongan = rs.getInt("jumlah");
             }
-            query = "SELECT id_lowongan FROM (SELECT * FROM (SELECT * FROM tb_lowongan ORDER BY date_posted DESC) AS temp LIMIT 6 OFFSET ?) AS temp2";
+            if (kategori.equals("SEMUA")) {
+                query = "SELECT id_lowongan FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE ORDER BY date_posted DESC) AS temp LIMIT 6 OFFSET ?) AS temp2";
+            } else {
+                query = "SELECT id_lowongan FROM (SELECT * FROM (SELECT * FROM tb_lowongan WHERE enabled = TRUE AND kategori = ? ORDER BY date_posted DESC) AS temp LIMIT 6 OFFSET ?) AS temp2";
+            }
             preparedStmt = con.prepareStatement(query);
-            preparedStmt.setInt(1, row);
+            if(!kategori.equals("SEMUA")){
+                preparedStmt.setString(1, kategori);
+                preparedStmt.setInt(2, row);
+            } else {
+                preparedStmt.setInt(1, row);
+            }
             rs = preparedStmt.executeQuery();
             int i = 0;
             while (rs.next()) {
@@ -84,7 +120,8 @@ public class daftarLowongan extends javax.swing.JFrame {
             System.out.println(e);
         }
         initComponents();
-        jPanel1.setPreferredSize(new java.awt.Dimension(1000, 1200));
+        jComboBox1.setSelectedItem(kategori);
+        jPanel1.setPreferredSize(new java.awt.Dimension(1000, 800));
         if (page == 1) {
             previousButton.setEnabled(false);
         }
@@ -236,8 +273,12 @@ public class daftarLowongan extends javax.swing.JFrame {
         nextButton = new javax.swing.JButton();
         previousButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1000, 1200));
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
@@ -747,6 +788,18 @@ public class daftarLowongan extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("x / x");
 
+        jButton8.setText("TERAPKAN");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("Filter Kategori:");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SEMUA", "IT", "Sekretaris", "Media Sosial Strategis", "Sales", "Design Grafis", "Arsitek" }));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -764,17 +817,24 @@ public class daftarLowongan extends javax.swing.JFrame {
                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(117, 117, 117))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(108, 108, 108)
-                .addComponent(previousButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 626, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(nextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton8))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(108, 108, 108)
+                        .addComponent(previousButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 626, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(nextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(105, 105, 105))
         );
         jPanel1Layout.setVerticalGroup(
@@ -782,8 +842,12 @@ public class daftarLowongan extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton8)
+                    .addComponent(jLabel2)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -832,7 +896,7 @@ public class daftarLowongan extends javax.swing.JFrame {
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        daftarLowongan daftar = new daftarLowongan(username, page + 1);
+        daftarLowongan daftar = new daftarLowongan(username, page + 1, kategori);
         daftar.setVisible(true);
         daftar.pack();
         daftar.setLocationRelativeTo(null);
@@ -841,7 +905,7 @@ public class daftarLowongan extends javax.swing.JFrame {
     private void previousButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_previousButtonActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        daftarLowongan daftar = new daftarLowongan(username, page - 1);
+        daftarLowongan daftar = new daftarLowongan(username, page - 1, kategori);
         daftar.setVisible(true);
         daftar.pack();
         daftar.setLocationRelativeTo(null);
@@ -866,6 +930,16 @@ public class daftarLowongan extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        kategori = jComboBox1.getSelectedItem().toString();
+        daftarLowongan daftar = new daftarLowongan(username, 1, kategori);
+        daftar.setVisible(true);
+        daftar.pack();
+        daftar.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -898,7 +972,7 @@ public class daftarLowongan extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new daftarLowongan("", 1).setVisible(true);
+                new daftarLowongan("", 1, "SEMUA").setVisible(true);
             }
         });
     }
@@ -911,6 +985,8 @@ public class daftarLowongan extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -922,6 +998,7 @@ public class daftarLowongan extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
