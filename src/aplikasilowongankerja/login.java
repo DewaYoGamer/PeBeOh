@@ -69,15 +69,16 @@ public class login extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 204, 204));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Poppins", 1, 48)); // NOI18N
         jLabel1.setText("MASUK");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel3.setText("Nama Pengguna :");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel4.setText("Kata Sandi");
 
+        jTextField1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField1.setToolTipText("");
         jTextField1.setMinimumSize(new java.awt.Dimension(70, 30));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -86,6 +87,7 @@ public class login extends javax.swing.JFrame {
             }
         });
 
+        jPasswordField1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jPasswordField1.setToolTipText("");
         jPasswordField1.setPreferredSize(new java.awt.Dimension(70, 30));
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
@@ -101,6 +103,7 @@ public class login extends javax.swing.JFrame {
         jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
 
         TombolMasuk.setBackground(new java.awt.Color(0, 204, 204));
+        TombolMasuk.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         TombolMasuk.setText("MASUK");
         TombolMasuk.setPreferredSize(new java.awt.Dimension(80, 30));
         TombolMasuk.addActionListener(new java.awt.event.ActionListener() {
@@ -110,7 +113,7 @@ public class login extends javax.swing.JFrame {
         });
 
         jButton1.setBackground(new java.awt.Color(0, 204, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jButton1.setText("Daftar Akun");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +143,7 @@ public class login extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(131, 131, 131)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(TombolMasuk, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
+                            .addComponent(TombolMasuk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(313, Short.MAX_VALUE))
         );
@@ -165,7 +168,7 @@ public class login extends javax.swing.JFrame {
                 .addComponent(TombolMasuk, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

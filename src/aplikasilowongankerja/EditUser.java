@@ -3,18 +3,36 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package aplikasilowongankerja;
-
+import java.sql.*;
 /**
  *
  * @author Dektu
  */
 public class EditUser extends javax.swing.JFrame {
+    String username;
 
     /**
      * Creates new form EditUser
      */
-    public EditUser() {
+    public EditUser(String usernameParam) {
+        username = usernameParam;
+        handleMySQL obj = new handleMySQL();
+        Connection con = obj.connect();
         initComponents();
+        try {
+            String query = "SELECT * FROM tb_pengguna JOIN tb_users ON tb_pengguna.id_user = tb_users.id_user WHERE username = '" + username + "'";
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                jTextField3.setText(rs.getString("nama_pengguna"));
+                jTextField2.setText(rs.getString("alamat"));
+                jTextField1.setText(rs.getString("email"));
+                jTextField4.setText(rs.getString("usia"));
+                jTextField7.setText(rs.getString("no_telp"));
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
     }
 
     /**
@@ -74,73 +92,74 @@ public class EditUser extends javax.swing.JFrame {
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
-        jTextField3.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField3.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField3.setText("xxx");
-        jTextField3.setBorder(null);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel1.setText("Nama Lengkap");
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
 
-        jTextField1.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField1.setText("xxx");
-        jTextField1.setBorder(null);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel3.setText("Email");
 
         jSeparator3.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
 
-        jTextField2.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField2.setText("xxx");
-        jTextField2.setBorder(null);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel5.setText("Alamat");
 
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
 
-        jTextField4.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField4.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField4.setText("xxx");
-        jTextField4.setBorder(null);
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
             }
         });
 
+        jLabel7.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel7.setText("Umur");
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
 
-        jTextField7.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField7.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField7.setText("xxx");
-        jTextField7.setBorder(null);
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField7ActionPerformed(evt);
             }
         });
 
-        jLabel9.setText("NoTelp");
+        jLabel9.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
+        jLabel9.setText("Nomor Telpon");
 
+        jButton2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jButton2.setText("TERAPKAN");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -149,43 +168,56 @@ public class EditUser extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jButton1.setText("Kembali");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(53, 53, 53)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jSeparator5)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSeparator4, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                    .addComponent(jSeparator4)
+                    .addComponent(jTextField4)
                     .addComponent(jSeparator3)
-                    .addComponent(jLabel5)
                     .addComponent(jSeparator2)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSeparator1)
-                    .addComponent(jLabel1)
                     .addComponent(jTextField3)
                     .addComponent(jTextField1)
                     .addComponent(jTextField2)
-                    .addComponent(jTextField7)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(28, 28, 28)
-                        .addComponent(jButton2)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(231, 231, 231))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(351, 351, 351)
+                .addComponent(jButton2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel1))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1)))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -213,11 +245,9 @@ public class EditUser extends javax.swing.JFrame {
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(123, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addComponent(jButton2)
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -260,32 +290,31 @@ public class EditUser extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        handleMySQL db = new handleMySQL();
-        Connection conn = db.connect();
-        if (jTextField2.getText().equals("") || jTextArea1.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "Nama lowongan dan deskripsi tidak boleh kosong!");
-            return;
-        }
+        handleMySQL obj = new handleMySQL();
+        Connection con = obj.connect();
         try {
-            String query = "UPDATE tb_lowongan SET nama_lowongan = ?, deskripsi = ?, gaji = ?, enabled = ?, kategori = ? WHERE id_lowongan = ?";
-            PreparedStatement stmt = conn.prepareStatement(query);
-            stmt.setString(1, jTextField2.getText());
-            stmt.setString(2, jTextArea1.getText());
-            stmt.setInt(3, (int) jSpinner1.getValue());
-            stmt.setBoolean(4, jRadioButton1.isSelected());
-            stmt.setString(5, jComboBox1.getSelectedItem().toString());
-            stmt.setInt(6, id_lowongan);
-            stmt.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Lowongan berhasil diperbaharui!");
+            String query = "UPDATE tb_pengguna JOIN tb_users ON tb_pengguna.id_user = tb_users.id_user SET nama_pengguna = '" + jTextField3.getText() + "', alamat = '" + jTextField2.getText() + "', email = '" + jTextField1.getText() + "', usia = '" + jTextField4.getText() + "', no_telp = '" + jTextField7.getText() + "' WHERE username = '" + username + "'";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            javax.swing.JOptionPane.showMessageDialog(null, "Data berhasil diubah");
             this.dispose();
-            HomePagePerusahaan home = new HomePagePerusahaan(username, 1);
-            home.setVisible(true);
-            home.pack();
-            home.setLocationRelativeTo(null);
+            ProfileUser profileUser = new ProfileUser(username);
+            profileUser.setVisible(true);
+            profileUser.pack();
+            profileUser.setLocationRelativeTo(null);
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(e);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        ProfileUser profileUser = new ProfileUser(username);
+        profileUser.setVisible(true);
+        profileUser.pack();
+        profileUser.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -317,7 +346,7 @@ public class EditUser extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EditUser().setVisible(true);
+                new EditUser("").setVisible(true);
             }
         });
     }

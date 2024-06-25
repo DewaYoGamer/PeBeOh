@@ -7,13 +7,13 @@ package aplikasilowongankerja;
 import javax.swing.*;
 import java.sql.*;
 
-public class buatlowongan extends javax.swing.JFrame {
+public class buatLowongan extends javax.swing.JFrame {
     String username;
     int id_perusahaan;
     /**
      * Creates new form login
      */
-    public buatlowongan(String usernameParam) {
+    public buatLowongan(String usernameParam) {
         handleMySQL db = new handleMySQL();
         Connection conn = db.connect();
         try {
@@ -85,15 +85,16 @@ public class buatlowongan extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel3.setText("Nama Lowongan");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel4.setText("Deskripsi");
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
+        jTextField2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField2.setToolTipText("");
         jTextField2.setMinimumSize(new java.awt.Dimension(70, 30));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -102,15 +103,16 @@ public class buatlowongan extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel7.setText("Minimal Gaji");
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
         jRadioButton1.setBackground(new java.awt.Color(0, 204, 204));
-        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jRadioButton1.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jRadioButton1.setSelected(true);
         jRadioButton1.setText("Diaktifkan");
         jRadioButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -120,16 +122,18 @@ public class buatlowongan extends javax.swing.JFrame {
             }
         });
 
+        jSpinner1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel8.setText("IDR");
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel5.setText("Ketegori");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IT", "Sekretaris", "Media Sosial Strategis", "Sales", "Design Grafis", "Arsitek" }));
 
+        jButton1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jButton1.setText("Kembali");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -138,6 +142,7 @@ public class buatlowongan extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jButton2.setText("BUAT");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -146,6 +151,7 @@ public class buatlowongan extends javax.swing.JFrame {
             }
         });
 
+        jTextField3.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextField3.setToolTipText("");
         jTextField3.setMinimumSize(new java.awt.Dimension(70, 30));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +160,7 @@ public class buatlowongan extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         jLabel9.setText("Daerah");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -226,7 +232,7 @@ public class buatlowongan extends javax.swing.JFrame {
                 .addComponent(jRadioButton1)
                 .addGap(7, 7, 7)
                 .addComponent(jButton2)
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -285,8 +291,8 @@ public class buatlowongan extends javax.swing.JFrame {
             stmt.setInt(4, (int) jSpinner1.getValue());
             stmt.setBoolean(5, jRadioButton1.isSelected());
             stmt.setString(6, jComboBox1.getSelectedItem().toString());
-            stmt.setString(8, jTextField3.getText());
             stmt.setDate(7, new Date(System.currentTimeMillis()));
+            stmt.setString(8, jTextField3.getText());
             stmt.executeUpdate();
             JOptionPane.showMessageDialog(null, "Lowongan berhasil dibuat!");
             this.dispose();
@@ -320,13 +326,13 @@ public class buatlowongan extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(buatlowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buatLowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(buatlowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buatLowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(buatlowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buatLowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(buatlowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buatLowongan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -396,7 +402,7 @@ public class buatlowongan extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new buatlowongan("").setVisible(true);
+                new buatLowongan("").setVisible(true);
             }
         });
     }

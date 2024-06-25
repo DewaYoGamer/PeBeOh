@@ -94,6 +94,7 @@ public class PerusahaanEdit extends javax.swing.JFrame {
         jTextArea1.setBorder(null);
         jScrollPane1.setViewportView(jTextArea1);
 
+        kembaliButton.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         kembaliButton.setText("Kembali");
         kembaliButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +102,7 @@ public class PerusahaanEdit extends javax.swing.JFrame {
             }
         });
 
+        terapkanButton.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         terapkanButton.setText("Terapkan");
         terapkanButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,7 +139,7 @@ public class PerusahaanEdit extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(kembaliButton)
                     .addComponent(terapkanButton))
-                .addContainerGap(338, Short.MAX_VALUE))
+                .addContainerGap(345, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

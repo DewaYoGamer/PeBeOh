@@ -302,6 +302,7 @@ public class daftarLowongan extends javax.swing.JFrame {
                 .addContainerGap(30, Short.MAX_VALUE))
         );
 
+        jButton1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jButton1.setText("Kembali");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -313,33 +314,35 @@ public class daftarLowongan extends javax.swing.JFrame {
         jPanel6.setAlignmentX(0.0F);
         jPanel6.setAlignmentY(0.0F);
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel10.setText("xxx");
 
         jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextArea3.setRows(5);
         jTextArea3.setText("xxx");
         jTextArea3.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea3.setEnabled(false);
         jScrollPane3.setViewportView(jTextArea3);
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel14.setText("Daerah");
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel15.setText("Perusahaan");
 
+        jLabel16.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel16.setText("Bidang");
 
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel21.setText("Gaji");
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jButton2.setText("LAMAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -390,33 +393,35 @@ public class daftarLowongan extends javax.swing.JFrame {
         jPanel7.setAlignmentX(0.0F);
         jPanel7.setAlignmentY(0.0F);
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel11.setText("xxx");
 
         jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextArea4.setRows(5);
         jTextArea4.setText("xxx");
         jTextArea4.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea4.setEnabled(false);
         jScrollPane4.setViewportView(jTextArea4);
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel17.setText("Daerah");
 
-        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel18.setText("Perusahaan");
 
+        jLabel19.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel19.setText("Bidang");
 
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel22.setText("Gaji");
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jButton3.setText("LAMAR");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -467,33 +472,35 @@ public class daftarLowongan extends javax.swing.JFrame {
         jPanel8.setAlignmentX(0.0F);
         jPanel8.setAlignmentY(0.0F);
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel12.setText("xxx");
 
         jTextArea5.setEditable(false);
         jTextArea5.setColumns(20);
+        jTextArea5.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextArea5.setRows(5);
         jTextArea5.setText("xxx");
         jTextArea5.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea5.setEnabled(false);
         jScrollPane5.setViewportView(jTextArea5);
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel20.setText("Daerah");
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel23.setText("Perusahaan");
 
+        jLabel24.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel24.setText("Bidang");
 
-        jLabel25.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel25.setText("Gaji");
 
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jButton4.setText("LAMAR");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -544,33 +551,35 @@ public class daftarLowongan extends javax.swing.JFrame {
         jPanel9.setAlignmentX(0.0F);
         jPanel9.setAlignmentY(0.0F);
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel13.setText("xxx");
 
         jTextArea6.setEditable(false);
         jTextArea6.setColumns(20);
+        jTextArea6.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextArea6.setRows(5);
         jTextArea6.setText("xxx");
         jTextArea6.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea6.setEnabled(false);
         jScrollPane6.setViewportView(jTextArea6);
 
-        jLabel26.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel26.setText("Daerah");
 
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel27.setText("Perusahaan");
 
+        jLabel28.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel28.setText("Bidang");
 
-        jLabel29.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel29.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel29.setText("Gaji");
 
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jButton5.setText("LAMAR");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -621,33 +630,35 @@ public class daftarLowongan extends javax.swing.JFrame {
         jPanel10.setAlignmentX(0.0F);
         jPanel10.setAlignmentY(0.0F);
 
-        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel30.setText("xxx");
 
         jTextArea7.setEditable(false);
         jTextArea7.setColumns(20);
+        jTextArea7.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextArea7.setRows(5);
         jTextArea7.setText("xxx");
         jTextArea7.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea7.setEnabled(false);
         jScrollPane7.setViewportView(jTextArea7);
 
-        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel31.setText("Daerah");
 
-        jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel32.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel32.setText("Perusahaan");
 
+        jLabel33.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel33.setText("Bidang");
 
-        jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel34.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel34.setText("Gaji");
 
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jButton6.setText("LAMAR");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -703,28 +714,30 @@ public class daftarLowongan extends javax.swing.JFrame {
 
         jTextArea8.setEditable(false);
         jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTextArea8.setRows(5);
         jTextArea8.setText("xxx");
         jTextArea8.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea8.setEnabled(false);
         jScrollPane8.setViewportView(jTextArea8);
 
-        jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel36.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel36.setText("Daerah");
 
-        jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel37.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel37.setText("Perusahaan");
 
+        jLabel38.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel38.setText("Bidang");
 
-        jLabel39.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel39.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel39.setText("Gaji");
 
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Poppins", 0, 10)); // NOI18N
         jButton7.setText("LAMAR");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -788,6 +801,7 @@ public class daftarLowongan extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("x / x");
 
+        jButton8.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jButton8.setText("TERAPKAN");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -795,9 +809,11 @@ public class daftarLowongan extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Filter Kategori:");
 
+        jComboBox1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SEMUA", "IT", "Sekretaris", "Media Sosial Strategis", "Sales", "Design Grafis", "Arsitek" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -811,7 +827,7 @@ public class daftarLowongan extends javax.swing.JFrame {
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -891,6 +907,11 @@ public class daftarLowongan extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        FormMelamar window = new FormMelamar(username, id_lowongan[0], 1);
+        window.setVisible(true);
+        window.setLocationRelativeTo(null);
+        window.pack();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
@@ -913,22 +934,47 @@ public class daftarLowongan extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        FormMelamar window = new FormMelamar(username, id_lowongan[5], 1);
+        window.setVisible(true);
+        window.setLocationRelativeTo(null);
+        window.pack();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        FormMelamar window = new FormMelamar(username, id_lowongan[4], 1);
+        window.setVisible(true);
+        window.setLocationRelativeTo(null);
+        window.pack();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        FormMelamar window = new FormMelamar(username, id_lowongan[3], 1);
+        window.setVisible(true);
+        window.setLocationRelativeTo(null);
+        window.pack();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        FormMelamar window = new FormMelamar(username, id_lowongan[2], 1);
+        window.setVisible(true);
+        window.setLocationRelativeTo(null);
+        window.pack();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        FormMelamar window = new FormMelamar(username, id_lowongan[1], 1);
+        window.setVisible(true);
+        window.setLocationRelativeTo(null);
+        window.pack();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed

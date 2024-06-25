@@ -23,12 +23,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -75,7 +81,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                  <EmptySpace pref="50" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -111,6 +117,7 @@
                       <Component id="SebelumnyaButton" min="-2" max="-2" attributes="0"/>
                       <Component id="BerikutnyaButton" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace pref="51" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -173,7 +180,7 @@
                               <Component id="lowongan4date" min="-2" pref="142" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="lowongan4pane" min="-2" pref="240" max="-2" attributes="0"/>
+                              <Component id="lowongan4pane" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="lowongan4edit" max="32767" attributes="0"/>
@@ -201,7 +208,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="lowongan4status" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="45" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="lowongan1edit2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan4edit" min="-2" max="-2" attributes="0"/>
@@ -217,7 +224,7 @@
             <Component class="javax.swing.JLabel" name="lowongan4title">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="text" type="java.lang.String" value="xxx"/>
@@ -234,6 +241,9 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Poppins" size="12" style="0"/>
+                    </Property>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="xxx"/>
                     <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -247,7 +257,7 @@
             <Component class="javax.swing.JLabel" name="lowongan4date">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Date"/>
@@ -256,7 +266,7 @@
             <Component class="javax.swing.JLabel" name="lowongan4status">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Aktif"/>
@@ -265,7 +275,7 @@
             <Component class="javax.swing.JButton" name="lowongan4edit">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="EDIT"/>
               </Properties>
@@ -276,7 +286,7 @@
             <Component class="javax.swing.JButton" name="lowongan1edit2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PELAMAR"/>
               </Properties>
@@ -337,7 +347,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="lowongan3status" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="45" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="lowongan1edit3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lowongan3edit" min="-2" max="-2" attributes="0"/>
@@ -353,7 +363,7 @@
             <Component class="javax.swing.JLabel" name="lowongan3title">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="text" type="java.lang.String" value="xxx"/>
@@ -370,6 +380,9 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Poppins" size="12" style="0"/>
+                    </Property>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="xxx"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -386,7 +399,7 @@
             <Component class="javax.swing.JLabel" name="lowongan3date">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Date"/>
@@ -395,7 +408,7 @@
             <Component class="javax.swing.JLabel" name="lowongan3status">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Aktif"/>
@@ -404,7 +417,7 @@
             <Component class="javax.swing.JButton" name="lowongan3edit">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="EDIT"/>
               </Properties>
@@ -415,7 +428,7 @@
             <Component class="javax.swing.JButton" name="lowongan1edit3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PELAMAR"/>
               </Properties>
@@ -446,7 +459,7 @@
                               <Component id="lowongan2date" min="-2" pref="142" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="lowongan2pane" min="-2" pref="240" max="-2" attributes="0"/>
+                              <Component id="lowongan2pane" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="lowongan2edit" alignment="0" max="32767" attributes="0"/>
@@ -490,7 +503,7 @@
             <Component class="javax.swing.JLabel" name="lowongan2title">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="text" type="java.lang.String" value="xxx"/>
@@ -507,6 +520,9 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Poppins" size="12" style="0"/>
+                    </Property>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="xxx"/>
                     <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -520,7 +536,7 @@
             <Component class="javax.swing.JLabel" name="lowongan2date">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Date"/>
@@ -529,7 +545,7 @@
             <Component class="javax.swing.JLabel" name="lowongan2status">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Aktif"/>
@@ -538,7 +554,7 @@
             <Component class="javax.swing.JButton" name="lowongan2edit">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="EDIT"/>
               </Properties>
@@ -549,7 +565,7 @@
             <Component class="javax.swing.JButton" name="lowongan1edit4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PELAMAR"/>
               </Properties>
@@ -624,7 +640,7 @@
             <Component class="javax.swing.JLabel" name="lowongan1title">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="text" type="java.lang.String" value="xxx"/>
@@ -641,6 +657,9 @@
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Poppins" size="12" style="0"/>
+                    </Property>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="xxxx"/>
                     <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -655,7 +674,7 @@
             <Component class="javax.swing.JLabel" name="lowongan1date">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="12" style="1"/>
+                  <Font name="Poppins" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Date"/>
@@ -664,7 +683,7 @@
             <Component class="javax.swing.JLabel" name="lowongan1status">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="4"/>
                 <Property name="text" type="java.lang.String" value="Aktif"/>
@@ -673,7 +692,7 @@
             <Component class="javax.swing.JButton" name="lowongan1edit">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="EDIT"/>
               </Properties>
@@ -684,7 +703,7 @@
             <Component class="javax.swing.JButton" name="lowongan1edit1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="8" style="0"/>
+                  <Font name="Poppins" size="8" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PELAMAR"/>
               </Properties>
@@ -719,7 +738,7 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="14" style="0"/>
+              <Font name="Poppins" size="14" style="0"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Profile Perusahaan"/>

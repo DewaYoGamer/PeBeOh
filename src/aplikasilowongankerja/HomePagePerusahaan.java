@@ -209,6 +209,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         if (nextjumlahLowongan == 0) {
             BerikutnyaButton.setVisible(false);
         }
+        jPanel1.setPreferredSize(new Dimension(860, 550));
     }
 
     /**
@@ -305,27 +306,28 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan4.setAlignmentX(0.0F);
         lowongan4.setAlignmentY(0.0F);
 
-        lowongan4title.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan4title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan4title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lowongan4title.setText("xxx");
 
         lowongan4area.setEditable(false);
         lowongan4area.setColumns(20);
+        lowongan4area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         lowongan4area.setRows(5);
         lowongan4area.setText("xxx");
         lowongan4area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         lowongan4area.setEnabled(false);
         lowongan4pane.setViewportView(lowongan4area);
 
-        lowongan4date.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan4date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan4date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan4date.setText("Date");
 
-        lowongan4status.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan4status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan4status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan4status.setText("Aktif");
 
-        lowongan4edit.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan4edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan4edit.setText("EDIT");
         lowongan4edit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -333,7 +335,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
-        lowongan1edit2.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit2.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan1edit2.setText("PELAMAR");
         lowongan1edit2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -353,7 +355,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan4date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(lowongan4Layout.createSequentialGroup()
-                        .addComponent(lowongan4pane, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lowongan4pane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lowongan4edit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -374,7 +376,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(lowongan4Layout.createSequentialGroup()
                         .addComponent(lowongan4status)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lowongan1edit2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan4edit))
@@ -386,12 +388,13 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan3.setAlignmentX(0.0F);
         lowongan3.setAlignmentY(0.0F);
 
-        lowongan3title.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan3title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan3title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lowongan3title.setText("xxx");
 
         lowongan3area.setEditable(false);
         lowongan3area.setColumns(20);
+        lowongan3area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         lowongan3area.setRows(5);
         lowongan3area.setText("xxx");
         lowongan3area.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -399,15 +402,15 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan3area.setEnabled(false);
         lowongan3pane.setViewportView(lowongan3area);
 
-        lowongan3date.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan3date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan3date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan3date.setText("Date");
 
-        lowongan3status.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan3status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan3status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan3status.setText("Aktif");
 
-        lowongan3edit.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan3edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan3edit.setText("EDIT");
         lowongan3edit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -415,7 +418,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
-        lowongan1edit3.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit3.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan1edit3.setText("PELAMAR");
         lowongan1edit3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -457,7 +460,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(lowongan3Layout.createSequentialGroup()
                         .addComponent(lowongan3status)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lowongan1edit3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan3edit))
@@ -469,27 +472,28 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan2.setAlignmentX(0.0F);
         lowongan2.setAlignmentY(0.0F);
 
-        lowongan2title.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan2title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan2title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lowongan2title.setText("xxx");
 
         lowongan2area.setEditable(false);
         lowongan2area.setColumns(20);
+        lowongan2area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         lowongan2area.setRows(5);
         lowongan2area.setText("xxx");
         lowongan2area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         lowongan2area.setEnabled(false);
         lowongan2pane.setViewportView(lowongan2area);
 
-        lowongan2date.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan2date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan2date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan2date.setText("Date");
 
-        lowongan2status.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan2status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan2status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan2status.setText("Aktif");
 
-        lowongan2edit.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan2edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan2edit.setText("EDIT");
         lowongan2edit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -497,7 +501,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
-        lowongan1edit4.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit4.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan1edit4.setText("PELAMAR");
         lowongan1edit4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -517,7 +521,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lowongan2date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(lowongan2Layout.createSequentialGroup()
-                        .addComponent(lowongan2pane, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lowongan2pane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lowongan2edit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -550,12 +554,13 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan1.setAlignmentX(0.0F);
         lowongan1.setAlignmentY(0.0F);
 
-        lowongan1title.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan1title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan1title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lowongan1title.setText("xxx");
 
         lowongan1area.setEditable(false);
         lowongan1area.setColumns(20);
+        lowongan1area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         lowongan1area.setRows(5);
         lowongan1area.setText("xxxx");
         lowongan1area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
@@ -563,15 +568,15 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         lowongan1area.setEnabled(false);
         lowongan1pane.setViewportView(lowongan1area);
 
-        lowongan1date.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lowongan1date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
         lowongan1date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan1date.setText("Date");
 
-        lowongan1status.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan1status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lowongan1status.setText("Aktif");
 
-        lowongan1edit.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan1edit.setText("EDIT");
         lowongan1edit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -579,7 +584,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
-        lowongan1edit1.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        lowongan1edit1.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
         lowongan1edit1.setText("PELAMAR");
         lowongan1edit1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -644,7 +649,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Profile Perusahaan");
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -689,7 +694,7 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                             .addComponent(SebelumnyaButton)
                             .addGap(6, 6, 6)
                             .addComponent(BerikutnyaButton))))
-                .addGap(5, 5, 5))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -716,18 +721,23 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
                     .addComponent(SebelumnyaButton)
-                    .addComponent(BerikutnyaButton)))
+                    .addComponent(BerikutnyaButton))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -811,10 +821,10 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        buatlowongan buatlowonganFrame = new buatlowongan(username);
-        buatlowonganFrame.setVisible(true);
-        buatlowonganFrame.pack();
-        buatlowonganFrame.setLocationRelativeTo(null);
+        buatLowongan buatLowonganFrame = new buatLowongan(username);
+        buatLowonganFrame.setVisible(true);
+        buatLowonganFrame.pack();
+        buatLowonganFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
@@ -847,18 +857,38 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
 
     private void lowongan1edit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit1ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        Pelamar pelamarFrame = new Pelamar(username, id_lowongan[0], "SEMUA", 1, page);
+        pelamarFrame.setVisible(true);
+        pelamarFrame.pack();
+        pelamarFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan1edit1ActionPerformed
 
     private void lowongan1edit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit2ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        Pelamar pelamarFrame = new Pelamar(username, id_lowongan[1], "SEMUA", 1, page);
+        pelamarFrame.setVisible(true);
+        pelamarFrame.pack();
+        pelamarFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan1edit2ActionPerformed
 
     private void lowongan1edit3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit3ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        Pelamar pelamarFrame = new Pelamar(username, id_lowongan[2], "SEMUA", 1, page);
+        pelamarFrame.setVisible(true);
+        pelamarFrame.pack();
+        pelamarFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan1edit3ActionPerformed
 
     private void lowongan1edit4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit4ActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        Pelamar pelamarFrame = new Pelamar(username, id_lowongan[3], "SEMUA", 1, page);
+        pelamarFrame.setVisible(true);
+        pelamarFrame.pack();
+        pelamarFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan1edit4ActionPerformed
 
     /**
