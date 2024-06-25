@@ -167,7 +167,6 @@ public class PerusahaanEdit extends javax.swing.JFrame {
 
     private void terapkanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_terapkanButtonActionPerformed
         // TODO add your handling code here:
-        this.dispose();
         handleMySQL obj = new handleMySQL();
         Connection conn = obj.connect();
         try {
@@ -180,6 +179,7 @@ public class PerusahaanEdit extends javax.swing.JFrame {
             e.printStackTrace();
         }
         JOptionPane.showMessageDialog(null, "Perubahan berhasil disimpan");
+        this.dispose();
         Perusahaan perusahaan = new Perusahaan(username);
         perusahaan.setVisible(true);
         perusahaan.pack();
