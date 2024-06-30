@@ -148,60 +148,10 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         Greeting_Label.setText("Selamat datang, " + nama + "!");
         if(jumlahLowongan == 0) {
             jLabel6.setText("Anda belum membuat lowongan kerja, silahkan membuat lowongan kerja terlebih dahulu");
-            lowongan1.setVisible(false);
-            lowongan2.setVisible(false);
-            lowongan3.setVisible(false);
-            lowongan4.setVisible(false);
         } else if (jumlahLowongan == 1) {
-            lowongan2.setVisible(false);
-            lowongan3.setVisible(false);
-            lowongan4.setVisible(false);
-            lowongan1title.setText(lowongan1Title);
-            lowongan1area.setText(lowongan1Desc);
-            lowongan1date.setText(lowongan1Date);
-            lowongan1status.setText(lowongan1Status);
         } else if (jumlahLowongan == 2) {
-            lowongan3.setVisible(false);
-            lowongan4.setVisible(false);
-            lowongan1title.setText(lowongan1Title);
-            lowongan1area.setText(lowongan1Desc);
-            lowongan1date.setText(lowongan1Date);
-            lowongan1status.setText(lowongan1Status);
-            lowongan2title.setText(lowongan2Title);
-            lowongan2area.setText(lowongan2Desc);
-            lowongan2date.setText(lowongan2Date);
-            lowongan2status.setText(lowongan2Status);
         } else if (jumlahLowongan == 3) {
-            lowongan4.setVisible(false);
-            lowongan1title.setText(lowongan1Title);
-            lowongan1area.setText(lowongan1Desc);
-            lowongan1date.setText(lowongan1Date);
-            lowongan1status.setText(lowongan1Status);
-            lowongan2title.setText(lowongan2Title);
-            lowongan2area.setText(lowongan2Desc);
-            lowongan2date.setText(lowongan2Date);
-            lowongan2status.setText(lowongan2Status);
-            lowongan3title.setText(lowongan3Title);
-            lowongan3area.setText(lowongan3Desc);
-            lowongan3date.setText(lowongan3Date);
-            lowongan3status.setText(lowongan3Status);
         } else {
-            lowongan1title.setText(lowongan1Title);
-            lowongan1area.setText(lowongan1Desc);
-            lowongan1date.setText(lowongan1Date);
-            lowongan1status.setText(lowongan1Status);
-            lowongan2title.setText(lowongan2Title);
-            lowongan2area.setText(lowongan2Desc);
-            lowongan2date.setText(lowongan2Date);
-            lowongan2status.setText(lowongan2Status);
-            lowongan3title.setText(lowongan3Title);
-            lowongan3area.setText(lowongan3Desc);
-            lowongan3date.setText(lowongan3Date);
-            lowongan3status.setText(lowongan3Status);
-            lowongan4title.setText(lowongan4Title);
-            lowongan4area.setText(lowongan4Desc);
-            lowongan4date.setText(lowongan4Date);
-            lowongan4status.setText(lowongan4Status);
         }
         if (page == 1) {
             SebelumnyaButton.setVisible(false);
@@ -226,41 +176,29 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        lowongan4 = new javax.swing.JPanel();
-        lowongan4title = new javax.swing.JLabel();
-        lowongan4pane = new javax.swing.JScrollPane();
-        lowongan4area = new javax.swing.JTextArea();
-        lowongan4date = new javax.swing.JLabel();
-        lowongan4status = new javax.swing.JLabel();
-        lowongan4edit = new javax.swing.JButton();
-        lowongan1edit2 = new javax.swing.JButton();
-        lowongan3 = new javax.swing.JPanel();
-        lowongan3title = new javax.swing.JLabel();
-        lowongan3pane = new javax.swing.JScrollPane();
-        lowongan3area = new javax.swing.JTextArea();
-        lowongan3date = new javax.swing.JLabel();
-        lowongan3status = new javax.swing.JLabel();
-        lowongan3edit = new javax.swing.JButton();
-        lowongan1edit3 = new javax.swing.JButton();
-        lowongan2 = new javax.swing.JPanel();
-        lowongan2title = new javax.swing.JLabel();
-        lowongan2pane = new javax.swing.JScrollPane();
-        lowongan2area = new javax.swing.JTextArea();
-        lowongan2date = new javax.swing.JLabel();
-        lowongan2status = new javax.swing.JLabel();
-        lowongan2edit = new javax.swing.JButton();
-        lowongan1edit4 = new javax.swing.JButton();
-        lowongan1 = new javax.swing.JPanel();
-        lowongan1title = new javax.swing.JLabel();
-        lowongan1pane = new javax.swing.JScrollPane();
-        lowongan1area = new javax.swing.JTextArea();
-        lowongan1date = new javax.swing.JLabel();
-        lowongan1status = new javax.swing.JLabel();
-        lowongan1edit = new javax.swing.JButton();
-        lowongan1edit1 = new javax.swing.JButton();
         BerikutnyaButton = new javax.swing.JToggleButton();
         SebelumnyaButton = new javax.swing.JToggleButton();
         jLabel3 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        lowongan1edit1 = new javax.swing.JButton();
+        lowongan1edit = new javax.swing.JButton();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        lowongan1edit2 = new javax.swing.JButton();
+        lowongan1edit3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -302,337 +240,6 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
-        lowongan4.setBackground(new java.awt.Color(255, 255, 255));
-        lowongan4.setAlignmentX(0.0F);
-        lowongan4.setAlignmentY(0.0F);
-
-        lowongan4title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan4title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lowongan4title.setText("xxx");
-
-        lowongan4area.setEditable(false);
-        lowongan4area.setColumns(20);
-        lowongan4area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        lowongan4area.setRows(5);
-        lowongan4area.setText("xxx");
-        lowongan4area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        lowongan4area.setEnabled(false);
-        lowongan4pane.setViewportView(lowongan4area);
-
-        lowongan4date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan4date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan4date.setText("Date");
-
-        lowongan4status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan4status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan4status.setText("Aktif");
-
-        lowongan4edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan4edit.setText("EDIT");
-        lowongan4edit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan4editActionPerformed(evt);
-            }
-        });
-
-        lowongan1edit2.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan1edit2.setText("PELAMAR");
-        lowongan1edit2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan1edit2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout lowongan4Layout = new javax.swing.GroupLayout(lowongan4);
-        lowongan4.setLayout(lowongan4Layout);
-        lowongan4Layout.setHorizontalGroup(
-            lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(lowongan4Layout.createSequentialGroup()
-                        .addComponent(lowongan4title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan4date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(lowongan4Layout.createSequentialGroup()
-                        .addComponent(lowongan4pane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lowongan4edit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lowongan4status, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan4Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(lowongan1edit2)))))
-                .addContainerGap())
-        );
-        lowongan4Layout.setVerticalGroup(
-            lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lowongan4title)
-                    .addComponent(lowongan4date))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(lowongan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lowongan4Layout.createSequentialGroup()
-                        .addComponent(lowongan4status)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lowongan1edit2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan4edit))
-                    .addComponent(lowongan4pane))
-                .addContainerGap())
-        );
-
-        lowongan3.setBackground(new java.awt.Color(255, 255, 255));
-        lowongan3.setAlignmentX(0.0F);
-        lowongan3.setAlignmentY(0.0F);
-
-        lowongan3title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan3title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lowongan3title.setText("xxx");
-
-        lowongan3area.setEditable(false);
-        lowongan3area.setColumns(20);
-        lowongan3area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        lowongan3area.setRows(5);
-        lowongan3area.setText("xxx");
-        lowongan3area.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        lowongan3area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        lowongan3area.setEnabled(false);
-        lowongan3pane.setViewportView(lowongan3area);
-
-        lowongan3date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan3date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan3date.setText("Date");
-
-        lowongan3status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan3status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan3status.setText("Aktif");
-
-        lowongan3edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan3edit.setText("EDIT");
-        lowongan3edit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan3editActionPerformed(evt);
-            }
-        });
-
-        lowongan1edit3.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan1edit3.setText("PELAMAR");
-        lowongan1edit3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan1edit3ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout lowongan3Layout = new javax.swing.GroupLayout(lowongan3);
-        lowongan3.setLayout(lowongan3Layout);
-        lowongan3Layout.setHorizontalGroup(
-            lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lowongan3Layout.createSequentialGroup()
-                        .addComponent(lowongan3title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan3date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(lowongan3Layout.createSequentialGroup()
-                        .addComponent(lowongan3pane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lowongan3status, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan3Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lowongan3edit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lowongan1edit3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addContainerGap())
-        );
-        lowongan3Layout.setVerticalGroup(
-            lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lowongan3title)
-                    .addComponent(lowongan3date))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(lowongan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lowongan3Layout.createSequentialGroup()
-                        .addComponent(lowongan3status)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lowongan1edit3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan3edit))
-                    .addComponent(lowongan3pane))
-                .addContainerGap())
-        );
-
-        lowongan2.setBackground(new java.awt.Color(255, 255, 255));
-        lowongan2.setAlignmentX(0.0F);
-        lowongan2.setAlignmentY(0.0F);
-
-        lowongan2title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan2title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lowongan2title.setText("xxx");
-
-        lowongan2area.setEditable(false);
-        lowongan2area.setColumns(20);
-        lowongan2area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        lowongan2area.setRows(5);
-        lowongan2area.setText("xxx");
-        lowongan2area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        lowongan2area.setEnabled(false);
-        lowongan2pane.setViewportView(lowongan2area);
-
-        lowongan2date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan2date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan2date.setText("Date");
-
-        lowongan2status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan2status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan2status.setText("Aktif");
-
-        lowongan2edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan2edit.setText("EDIT");
-        lowongan2edit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan2editActionPerformed(evt);
-            }
-        });
-
-        lowongan1edit4.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan1edit4.setText("PELAMAR");
-        lowongan1edit4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan1edit4ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout lowongan2Layout = new javax.swing.GroupLayout(lowongan2);
-        lowongan2.setLayout(lowongan2Layout);
-        lowongan2Layout.setHorizontalGroup(
-            lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lowongan2Layout.createSequentialGroup()
-                        .addComponent(lowongan2title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan2date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(lowongan2Layout.createSequentialGroup()
-                        .addComponent(lowongan2pane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lowongan2edit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lowongan2status, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan2Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(lowongan1edit4)))))
-                .addContainerGap())
-        );
-        lowongan2Layout.setVerticalGroup(
-            lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lowongan2title)
-                    .addComponent(lowongan2date))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(lowongan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lowongan2Layout.createSequentialGroup()
-                        .addComponent(lowongan2status)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lowongan1edit4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan2edit))
-                    .addComponent(lowongan2pane))
-                .addContainerGap())
-        );
-
-        lowongan1.setBackground(new java.awt.Color(255, 255, 255));
-        lowongan1.setAlignmentX(0.0F);
-        lowongan1.setAlignmentY(0.0F);
-
-        lowongan1title.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan1title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lowongan1title.setText("xxx");
-
-        lowongan1area.setEditable(false);
-        lowongan1area.setColumns(20);
-        lowongan1area.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        lowongan1area.setRows(5);
-        lowongan1area.setText("xxxx");
-        lowongan1area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        lowongan1area.setDragEnabled(true);
-        lowongan1area.setEnabled(false);
-        lowongan1pane.setViewportView(lowongan1area);
-
-        lowongan1date.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
-        lowongan1date.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan1date.setText("Date");
-
-        lowongan1status.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan1status.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lowongan1status.setText("Aktif");
-
-        lowongan1edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan1edit.setText("EDIT");
-        lowongan1edit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan1editActionPerformed(evt);
-            }
-        });
-
-        lowongan1edit1.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
-        lowongan1edit1.setText("PELAMAR");
-        lowongan1edit1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lowongan1edit1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout lowongan1Layout = new javax.swing.GroupLayout(lowongan1);
-        lowongan1.setLayout(lowongan1Layout);
-        lowongan1Layout.setHorizontalGroup(
-            lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lowongan1Layout.createSequentialGroup()
-                        .addComponent(lowongan1title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan1date, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(lowongan1Layout.createSequentialGroup()
-                        .addComponent(lowongan1pane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lowongan1status, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lowongan1edit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lowongan1Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(lowongan1edit1)))))
-                .addContainerGap())
-        );
-        lowongan1Layout.setVerticalGroup(
-            lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(lowongan1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lowongan1title)
-                    .addComponent(lowongan1date))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(lowongan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lowongan1Layout.createSequentialGroup()
-                        .addComponent(lowongan1status)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lowongan1edit1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lowongan1edit))
-                    .addComponent(lowongan1pane))
-                .addContainerGap())
-        );
-
         BerikutnyaButton.setText(">>");
         BerikutnyaButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BerikutnyaButton.addActionListener(new java.awt.event.ActionListener() {
@@ -665,6 +272,178 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             }
         });
 
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasilowongankerja/gambar/sinaarmas.png"))); // NOI18N
+        jLabel12.setText("jLabel4");
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel13.setText("PT Sinar Mas Agro Resources and Technology Tbk");
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel14.setText("Head Manager");
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel15.setText("Jakarta");
+
+        jLabel16.setText("Rp 6.000.000 ");
+
+        jLabel17.setText("Manager (Manager pemasaran)");
+
+        jLabel18.setText("Kadaluwarsa 5 Juli 2024");
+
+        lowongan1edit1.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
+        lowongan1edit1.setText("PELAMAR");
+        lowongan1edit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1edit1ActionPerformed(evt);
+            }
+        });
+
+        lowongan1edit.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
+        lowongan1edit.setText("EDIT");
+        lowongan1edit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1editActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit1))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel16))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(lowongan1edit1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(lowongan1edit))
+                .addGap(0, 15, Short.MAX_VALUE))
+        );
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasilowongankerja/gambar/sinaarmas.png"))); // NOI18N
+        jLabel33.setText("jLabel4");
+
+        jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel34.setText("PT Sinar Mas Agro Resources and Technology Tbk");
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel35.setText("Head Manager");
+
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel36.setText("Jakarta");
+
+        jLabel37.setText("Rp 6.000.000 ");
+
+        jLabel38.setText("Manager (Manager pemasaran)");
+
+        jLabel39.setText("Kadaluwarsa 5 Juli 2024");
+
+        lowongan1edit2.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
+        lowongan1edit2.setText("PELAMAR");
+        lowongan1edit2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1edit2ActionPerformed(evt);
+            }
+        });
+
+        lowongan1edit3.setFont(new java.awt.Font("Poppins", 0, 8)); // NOI18N
+        lowongan1edit3.setText("EDIT");
+        lowongan1edit3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lowongan1edit3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(jLabel38)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit2))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(jLabel39)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lowongan1edit3))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel34)
+                            .addComponent(jLabel35)
+                            .addComponent(jLabel36)
+                            .addComponent(jLabel37))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel37)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel38)
+                    .addComponent(lowongan1edit2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(lowongan1edit3))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -672,29 +451,25 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Greeting_Label)
-                        .addGap(315, 315, 315)
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1))
                     .addComponent(jLabel6)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lowongan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lowongan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(67, 67, 67)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lowongan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lowongan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(32, 32, 32)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Greeting_Label)
+                            .addGap(315, 315, 315)
+                            .addComponent(jLabel3)
+                            .addGap(18, 18, 18)
+                            .addComponent(jButton1))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                             .addComponent(jButton2)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(SebelumnyaButton)
-                            .addGap(6, 6, 6)
+                            .addGap(3, 3, 3)
                             .addComponent(BerikutnyaButton))))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -711,18 +486,14 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lowongan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lowongan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lowongan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lowongan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(SebelumnyaButton)
                     .addComponent(BerikutnyaButton))
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addGap(49, 49, 49))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -735,49 +506,11 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lowongan3editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan3editActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[2]);
-        editlowonganFrame.setVisible(true);
-        editlowonganFrame.pack();
-        editlowonganFrame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_lowongan3editActionPerformed
-
-    private void lowongan1editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1editActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[0]);
-        editlowonganFrame.setVisible(true);
-        editlowonganFrame.pack();
-        editlowonganFrame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_lowongan1editActionPerformed
-
-    private void lowongan2editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan2editActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[1]);
-        editlowonganFrame.setVisible(true);
-        editlowonganFrame.pack();
-        editlowonganFrame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_lowongan2editActionPerformed
-
-    private void lowongan4editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan4editActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[3]);
-        editlowonganFrame.setVisible(true);
-        editlowonganFrame.pack();
-        editlowonganFrame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_lowongan4editActionPerformed
 
     private void SebelumnyaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SebelumnyaButtonActionPerformed
         // TODO add your handling code here:
@@ -864,32 +597,22 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
         pelamarFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan1edit1ActionPerformed
 
-    private void lowongan1edit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit2ActionPerformed
+    private void lowongan1editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1editActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        Pelamar pelamarFrame = new Pelamar(username, id_lowongan[1], "SEMUA", 1, page);
-        pelamarFrame.setVisible(true);
-        pelamarFrame.pack();
-        pelamarFrame.setLocationRelativeTo(null);
+        editlowongan editlowonganFrame = new editlowongan(username, id_lowongan[0]);
+        editlowonganFrame.setVisible(true);
+        editlowonganFrame.pack();
+        editlowonganFrame.setLocationRelativeTo(null);
+    }//GEN-LAST:event_lowongan1editActionPerformed
+
+    private void lowongan1edit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit2ActionPerformed
+        // TODO add your handling code here:
     }//GEN-LAST:event_lowongan1edit2ActionPerformed
 
     private void lowongan1edit3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit3ActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        Pelamar pelamarFrame = new Pelamar(username, id_lowongan[2], "SEMUA", 1, page);
-        pelamarFrame.setVisible(true);
-        pelamarFrame.pack();
-        pelamarFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_lowongan1edit3ActionPerformed
-
-    private void lowongan1edit4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowongan1edit4ActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        Pelamar pelamarFrame = new Pelamar(username, id_lowongan[3], "SEMUA", 1, page);
-        pelamarFrame.setVisible(true);
-        pelamarFrame.pack();
-        pelamarFrame.setLocationRelativeTo(null);
-    }//GEN-LAST:event_lowongan1edit4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -933,40 +656,44 @@ public class HomePagePerusahaan extends javax.swing.JFrame {
     private javax.swing.JToggleButton SebelumnyaButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel lowongan1;
-    private javax.swing.JTextArea lowongan1area;
-    private javax.swing.JLabel lowongan1date;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JButton lowongan1edit;
     private javax.swing.JButton lowongan1edit1;
     private javax.swing.JButton lowongan1edit2;
     private javax.swing.JButton lowongan1edit3;
-    private javax.swing.JButton lowongan1edit4;
-    private javax.swing.JScrollPane lowongan1pane;
-    private javax.swing.JLabel lowongan1status;
-    private javax.swing.JLabel lowongan1title;
-    private javax.swing.JPanel lowongan2;
-    private javax.swing.JTextArea lowongan2area;
-    private javax.swing.JLabel lowongan2date;
-    private javax.swing.JButton lowongan2edit;
-    private javax.swing.JScrollPane lowongan2pane;
-    private javax.swing.JLabel lowongan2status;
-    private javax.swing.JLabel lowongan2title;
-    private javax.swing.JPanel lowongan3;
-    private javax.swing.JTextArea lowongan3area;
-    private javax.swing.JLabel lowongan3date;
-    private javax.swing.JButton lowongan3edit;
-    private javax.swing.JScrollPane lowongan3pane;
-    private javax.swing.JLabel lowongan3status;
-    private javax.swing.JLabel lowongan3title;
-    private javax.swing.JPanel lowongan4;
-    private javax.swing.JTextArea lowongan4area;
-    private javax.swing.JLabel lowongan4date;
-    private javax.swing.JButton lowongan4edit;
-    private javax.swing.JScrollPane lowongan4pane;
-    private javax.swing.JLabel lowongan4status;
-    private javax.swing.JLabel lowongan4title;
     // End of variables declaration//GEN-END:variables
 }
